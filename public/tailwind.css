@@ -1,0 +1,28 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.collapsed {
+  .sidebar {
+    @apply w-14;
+  }
+  .sidebar .menu-item {
+    .label {
+      @apply flex-none pl-0;
+      width: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.sidebar {
+  width: 240px;
+}
+
+.sidebar .menu-item {
+  @apply flex-nowrap overflow-x-hidden w-full;
+}
+
+.sidebar .menu-item .label {
+  @apply transition-all ease-in-out duration-500 delay-100 flex-auto w-auto;
+}
