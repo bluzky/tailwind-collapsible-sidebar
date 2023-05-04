@@ -12,67 +12,279 @@
     <title>Welcome to Tailwind!</title>
   </head>
   <body class="antialiased">
-    <div class="flex gap-4 mx-auto">
-  <aside class="sidebar bg-zinc-100 p-2 py-4 h-screen overflow-x-hidden flex-none transition-all ease-in-out duration-500">
-    <button onclick="document.body.classList.toggle('collapsed')" class="bg-green-500 rounded-lg w-full text-center">T</button>
-    <ul>
-      <li class="menu-item flex items-center p-2 hover:bg-blue-100 rounded-lg"><span class="text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6 shink-0">D</span> <span class="label">Dashboard</span></li>
-      <li class="menu-item flex items-center p-2 hover:bg-blue-100 rounded-lg"><span class="text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6">C</span> <span class="label">Contents</span></li>
-      <li class="menu-item flex items-center p-2 hover:bg-blue-100 rounded-lg"><span class="text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6">C</span> <span class="label">Collections</span></li>
-      <li class="menu-item flex items-center p-2 hover:bg-blue-100 rounded-lg"><span class="text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6">U</span> <span class="label">Users</span></li>
-      <li class="menu-item flex items-center p-2 hover:bg-blue-100 rounded-lg"><span class="text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6">S</span> <span class="label">Settings</span></li>
-    </ul>
-  </aside>
-  <main class="main h-screen overflow-y-auto bg-zinc-300 p-12 grow">
-    <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
-      <p>By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you <em>really are</em> just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.</p>
-      <p>We get lots of complaints about it actually, with people regularly asking us things like:</p>
-      <blockquote>
-        <p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?</p>
-      </blockquote>
-      <p>We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a <code>p</code> element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look <em>awesome</em>, not awful.</p>
-      <p>The <code>@tailwindcss/typography</code> plugin is our attempt to give you what you <em>actually</em> want, without any of the downsides of doing something stupid like disabling our base styles.</p>
-      <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
-      <p>By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you <em>really are</em> just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.</p>
-      <p>We get lots of complaints about it actually, with people regularly asking us things like:</p>
-      <blockquote>
-        <p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?</p>
-      </blockquote>
-      <p>We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a <code>p</code> element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look <em>awesome</em>, not awful.</p>
-      <p>The <code>@tailwindcss/typography</code> plugin is our attempt to give you what you <em>actually</em> want, without any of the downsides of doing something stupid like disabling our base styles.</p>
-      <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
-      <p>By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you <em>really are</em> just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.</p>
-      <p>We get lots of complaints about it actually, with people regularly asking us things like:</p>
-      <blockquote>
-        <p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?</p>
-      </blockquote>
-      <p>We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a <code>p</code> element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look <em>awesome</em>, not awful.</p>
-      <p>The <code>@tailwindcss/typography</code> plugin is our attempt to give you what you <em>actually</em> want, without any of the downsides of doing something stupid like disabling our base styles.</p>
-      <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
-      <p>By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you <em>really are</em> just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.</p>
-      <p>We get lots of complaints about it actually, with people regularly asking us things like:</p>
-      <blockquote>
-        <p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?</p>
-      </blockquote>
-      <p>We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a <code>p</code> element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look <em>awesome</em>, not awful.</p>
-      <p>The <code>@tailwindcss/typography</code> plugin is our attempt to give you what you <em>actually</em> want, without any of the downsides of doing something stupid like disabling our base styles.</p>
-      <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
-      <p>By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you <em>really are</em> just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.</p>
-      <p>We get lots of complaints about it actually, with people regularly asking us things like:</p>
-      <blockquote>
-        <p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?</p>
-      </blockquote>
-      <p>We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a <code>p</code> element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look <em>awesome</em>, not awful.</p>
-      <p>The <code>@tailwindcss/typography</code> plugin is our attempt to give you what you <em>actually</em> want, without any of the downsides of doing something stupid like disabling our base styles.</p>
-      <p class="lead">Until now, trying to style an article, document, or blog post with Tailwind has been a tedious task that required a keen eye for typography and a lot of complex custom CSS.</p>
-      <p>By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you <em>really are</em> just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.</p>
-      <p>We get lots of complaints about it actually, with people regularly asking us things like:</p>
-      <blockquote>
-        <p>Why is Tailwind removing the default styles on my <code>h1</code> elements? How do I disable this? What do you mean I lose all the other base styles too?</p>
-      </blockquote>
-      <p>We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a <code>p</code> element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look <em>awesome</em>, not awful.</p>
-      <p>The <code>@tailwindcss/typography</code> plugin is our attempt to give you what you <em>actually</em> want, without any of the downsides of doing something stupid like disabling our base styles.</p>
-  </main>
-</div>
+    <div class="flex mx-auto">
+      <aside
+        class="collapsible sidebar bg-zinc-100 p-2 py-4 h-screen flex-none"
+      >
+        <button
+          onclick="document.querySelector('aside').classList.toggle('collapsed')"
+          class="bg-green-500 rounded-lg w-full text-center"
+        >
+          T
+        </button>
+        <ul class="overflow-x-hidden">
+          <li class="collapsible-item p-2 hover:bg-blue-100 rounded-lg">
+            <span
+              class="no-collapse text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6"
+              >D</span
+            >
+            <span class="will-collapse">Dashboard</span>
+          </li>
+          <li class="collapsible-item p-2 hover:bg-blue-100 rounded-lg">
+            <span
+              class="no-collapse text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6"
+              >C</span
+            >
+            <span class="will-collapse">Contents</span>
+          </li>
+          <li class="collapsible-item p-2 hover:bg-blue-100 rounded-lg">
+            <span
+              class="no-collapse text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6"
+              >C</span
+            >
+            <span class="will-collapse">Collections</span>
+          </li>
+          <li class="collapsible-item p-2 hover:bg-blue-100 rounded-lg">
+            <span
+              class="no-collapse text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6"
+              >U</span
+            >
+            <span class="will-collapse">Users</span>
+          </li>
+          <li class="collapsible-item p-2 hover:bg-blue-100 rounded-lg">
+            <span
+              class="no-collapse text-lg font-bold text-blue-500 rounded bg-blue-200 w-6 h-6"
+              >S</span
+            >
+            <span class="will-collapse">Settings</span>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main h-screen overflow-y-auto bg-zinc-300 p-12 grow">
+        <p class="lead">
+          Until now, trying to style an article, document, or blog post with
+          Tailwind has been a tedious task that required a keen eye for
+          typography and a lot of complex custom CSS.
+        </p>
+        <p>
+          By default, Tailwind removes all of the default browser styling from
+          paragraphs, headings, lists and more. This ends up being really useful
+          for building application UIs because you spend less time undoing
+          user-agent styles, but when you <em>really are</em> just trying to
+          style some content that came from a rich-text editor in a CMS or a
+          markdown file, it can be surprising and unintuitive.
+        </p>
+        <p>
+          We get lots of complaints about it actually, with people regularly
+          asking us things like:
+        </p>
+        <blockquote>
+          <p>
+            Why is Tailwind removing the default styles on my
+            <code>h1</code> elements? How do I disable this? What do you mean I
+            lose all the other base styles too?
+          </p>
+        </blockquote>
+        <p>
+          We hear you, but we're not convinced that simply disabling our base
+          styles is what you really want. You don't want to have to remove
+          annoying margins every time you use a <code>p</code> element in a
+          piece of your dashboard UI. And I doubt you really want your blog
+          posts to use the user-agent styles either — you want them to look
+          <em>awesome</em>, not awful.
+        </p>
+        <p>
+          The <code>@tailwindcss/typography</code> plugin is our attempt to give
+          you what you <em>actually</em> want, without any of the downsides of
+          doing something stupid like disabling our base styles.
+        </p>
+        <p class="lead">
+          Until now, trying to style an article, document, or blog post with
+          Tailwind has been a tedious task that required a keen eye for
+          typography and a lot of complex custom CSS.
+        </p>
+        <p>
+          By default, Tailwind removes all of the default browser styling from
+          paragraphs, headings, lists and more. This ends up being really useful
+          for building application UIs because you spend less time undoing
+          user-agent styles, but when you <em>really are</em> just trying to
+          style some content that came from a rich-text editor in a CMS or a
+          markdown file, it can be surprising and unintuitive.
+        </p>
+        <p>
+          We get lots of complaints about it actually, with people regularly
+          asking us things like:
+        </p>
+        <blockquote>
+          <p>
+            Why is Tailwind removing the default styles on my
+            <code>h1</code> elements? How do I disable this? What do you mean I
+            lose all the other base styles too?
+          </p>
+        </blockquote>
+        <p>
+          We hear you, but we're not convinced that simply disabling our base
+          styles is what you really want. You don't want to have to remove
+          annoying margins every time you use a <code>p</code> element in a
+          piece of your dashboard UI. And I doubt you really want your blog
+          posts to use the user-agent styles either — you want them to look
+          <em>awesome</em>, not awful.
+        </p>
+        <p>
+          The <code>@tailwindcss/typography</code> plugin is our attempt to give
+          you what you <em>actually</em> want, without any of the downsides of
+          doing something stupid like disabling our base styles.
+        </p>
+        <p class="lead">
+          Until now, trying to style an article, document, or blog post with
+          Tailwind has been a tedious task that required a keen eye for
+          typography and a lot of complex custom CSS.
+        </p>
+        <p>
+          By default, Tailwind removes all of the default browser styling from
+          paragraphs, headings, lists and more. This ends up being really useful
+          for building application UIs because you spend less time undoing
+          user-agent styles, but when you <em>really are</em> just trying to
+          style some content that came from a rich-text editor in a CMS or a
+          markdown file, it can be surprising and unintuitive.
+        </p>
+        <p>
+          We get lots of complaints about it actually, with people regularly
+          asking us things like:
+        </p>
+        <blockquote>
+          <p>
+            Why is Tailwind removing the default styles on my
+            <code>h1</code> elements? How do I disable this? What do you mean I
+            lose all the other base styles too?
+          </p>
+        </blockquote>
+        <p>
+          We hear you, but we're not convinced that simply disabling our base
+          styles is what you really want. You don't want to have to remove
+          annoying margins every time you use a <code>p</code> element in a
+          piece of your dashboard UI. And I doubt you really want your blog
+          posts to use the user-agent styles either — you want them to look
+          <em>awesome</em>, not awful.
+        </p>
+        <p>
+          The <code>@tailwindcss/typography</code> plugin is our attempt to give
+          you what you <em>actually</em> want, without any of the downsides of
+          doing something stupid like disabling our base styles.
+        </p>
+        <p class="lead">
+          Until now, trying to style an article, document, or blog post with
+          Tailwind has been a tedious task that required a keen eye for
+          typography and a lot of complex custom CSS.
+        </p>
+        <p>
+          By default, Tailwind removes all of the default browser styling from
+          paragraphs, headings, lists and more. This ends up being really useful
+          for building application UIs because you spend less time undoing
+          user-agent styles, but when you <em>really are</em> just trying to
+          style some content that came from a rich-text editor in a CMS or a
+          markdown file, it can be surprising and unintuitive.
+        </p>
+        <p>
+          We get lots of complaints about it actually, with people regularly
+          asking us things like:
+        </p>
+        <blockquote>
+          <p>
+            Why is Tailwind removing the default styles on my
+            <code>h1</code> elements? How do I disable this? What do you mean I
+            lose all the other base styles too?
+          </p>
+        </blockquote>
+        <p>
+          We hear you, but we're not convinced that simply disabling our base
+          styles is what you really want. You don't want to have to remove
+          annoying margins every time you use a <code>p</code> element in a
+          piece of your dashboard UI. And I doubt you really want your blog
+          posts to use the user-agent styles either — you want them to look
+          <em>awesome</em>, not awful.
+        </p>
+        <p>
+          The <code>@tailwindcss/typography</code> plugin is our attempt to give
+          you what you <em>actually</em> want, without any of the downsides of
+          doing something stupid like disabling our base styles.
+        </p>
+        <p class="lead">
+          Until now, trying to style an article, document, or blog post with
+          Tailwind has been a tedious task that required a keen eye for
+          typography and a lot of complex custom CSS.
+        </p>
+        <p>
+          By default, Tailwind removes all of the default browser styling from
+          paragraphs, headings, lists and more. This ends up being really useful
+          for building application UIs because you spend less time undoing
+          user-agent styles, but when you <em>really are</em> just trying to
+          style some content that came from a rich-text editor in a CMS or a
+          markdown file, it can be surprising and unintuitive.
+        </p>
+        <p>
+          We get lots of complaints about it actually, with people regularly
+          asking us things like:
+        </p>
+        <blockquote>
+          <p>
+            Why is Tailwind removing the default styles on my
+            <code>h1</code> elements? How do I disable this? What do you mean I
+            lose all the other base styles too?
+          </p>
+        </blockquote>
+        <p>
+          We hear you, but we're not convinced that simply disabling our base
+          styles is what you really want. You don't want to have to remove
+          annoying margins every time you use a <code>p</code> element in a
+          piece of your dashboard UI. And I doubt you really want your blog
+          posts to use the user-agent styles either — you want them to look
+          <em>awesome</em>, not awful.
+        </p>
+        <p>
+          The <code>@tailwindcss/typography</code> plugin is our attempt to give
+          you what you <em>actually</em> want, without any of the downsides of
+          doing something stupid like disabling our base styles.
+        </p>
+        <p class="lead">
+          Until now, trying to style an article, document, or blog post with
+          Tailwind has been a tedious task that required a keen eye for
+          typography and a lot of complex custom CSS.
+        </p>
+        <p>
+          By default, Tailwind removes all of the default browser styling from
+          paragraphs, headings, lists and more. This ends up being really useful
+          for building application UIs because you spend less time undoing
+          user-agent styles, but when you <em>really are</em> just trying to
+          style some content that came from a rich-text editor in a CMS or a
+          markdown file, it can be surprising and unintuitive.
+        </p>
+        <p>
+          We get lots of complaints about it actually, with people regularly
+          asking us things like:
+        </p>
+        <blockquote>
+          <p>
+            Why is Tailwind removing the default styles on my
+            <code>h1</code> elements? How do I disable this? What do you mean I
+            lose all the other base styles too?
+          </p>
+        </blockquote>
+        <p>
+          We hear you, but we're not convinced that simply disabling our base
+          styles is what you really want. You don't want to have to remove
+          annoying margins every time you use a <code>p</code> element in a
+          piece of your dashboard UI. And I doubt you really want your blog
+          posts to use the user-agent styles either — you want them to look
+          <em>awesome</em>, not awful.
+        </p>
+        <p>
+          The <code>@tailwindcss/typography</code> plugin is our attempt to give
+          you what you <em>actually</em> want, without any of the downsides of
+          doing something stupid like disabling our base styles.
+        </p>
+      </main>
+    </div>
   </body>
 </html>

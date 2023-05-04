@@ -2,27 +2,33 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.collapsed {
-  .sidebar {
-    @apply w-14;
+.collapsible{
+/* .collapsed:hover { */
+  &.sidebar, .sidebar {
+    @apply w-60 transition-all duration-500;
   }
-  .sidebar .menu-item {
-    .label {
-      @apply flex-none pl-0;
-      width: 0;
-      opacity: 0;
+
+  .collapsible-item {
+    @apply flex gap-0 items-center transition-all duration-500;
+    .no-collapse {
+      @apply shrink-0;
+    }
+
+    .will-collapse {
+        @apply w-auto pl-2 opacity-100 transition-all duration-500 ;
     }
   }
 }
 
-.sidebar {
-  width: 240px;
-}
+.collapsed {
+  &.sidebar,
+  .sidebar {
+    @apply w-14;
+  }
 
-.sidebar .menu-item {
-  @apply flex-nowrap overflow-x-hidden w-full;
-}
-
-.sidebar .menu-item .label {
-  @apply transition-all ease-in-out duration-500 delay-100 flex-auto w-auto;
+  .collapsible-item {
+    .will-collapse {
+      @apply w-0 opacity-0 pl-0;
+    }
+  }
 }
